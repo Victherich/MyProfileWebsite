@@ -1,0 +1,102 @@
+.Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: red; */
+    gap: 30px;
+    border-radius: 200px 200px 200px 200px ;
+    margin-bottom: 10vh;
+}
+
+.Line{
+    width: 80%;
+    height: 5px;
+    background: linear-gradient(109.6deg, rgb(61, 106, 239) 11.2%, rgb(122, 14, 190) 70.2%);
+    border-radius: 10px;    
+}
+
+.Projects h1{
+    font-size: 45px;
+    background-image:linear-gradient(155deg, rgb(61, 106, 239) 55%, rgb(122, 14, 190) 30%);
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+}
+
+.Project{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 60vh;
+    background: linear-gradient(109.6deg,  rgb(3, 22, 65) 11.2%, rgb(47, 6, 73));    
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 40px;
+}
+
+.ProjectLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    gap:20px;
+    transform: scale(1);
+    transition: 350ms;
+}
+
+.ProjectLeft:hover{
+    transform: scale(1.1);
+}
+
+.ProjectRight{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    font-size: 13px;
+    padding: 0px 60px;
+    gap:20px
+}
+
+.ProjectRight button{
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(31, 31, 112);
+    color: bisque;
+    border-radius: 10px;
+    border: none;
+    transform: scale(1);
+    transition: 120ms;
+}
+
+.ProjectRight button:hover{
+    transform: scale(1.06);
+}
+
+.ProjectRight button:active{
+    transform: scale(0.9);
+    background-color: rgb(13, 13, 46);
+}
+.ProjectLeft h1{
+    font-size: 18px;
+    color: bisque;
+}
+
+.TaskManagerImageWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(32, 3, 32);
+    height: 60%;
+    width: 70%;
+    border-radius: 10px;
+    
+}
+

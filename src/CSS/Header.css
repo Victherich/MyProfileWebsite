@@ -1,0 +1,127 @@
+.HeaderWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(14, 13, 13);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: fixed;
+    top:0;
+    z-index: 1111111111;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+}
+
+.HeaderImageWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:18%;
+    height: 80%;
+    /* background-color: red; */
+}
+
+.HeaderImageWrap img{
+    width: 100%;
+    height: 100%;
+}
+
+.HeaderRight{
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    align-items: center;
+}
+
+.HeaderRight p{
+    cursor: pointer;
+    font-weight: bold;
+    transform: scale(1);
+    transition: 120ms;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;    
+}
+
+.HeaderRight p:hover{
+    transform:scale(1.06);
+}
+
+.HeaderRight p:active{
+    transform:scale(0.9);
+}
+
+.ThemeSwitchPathLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgb(14, 72, 222);
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+    padding: 2.5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 120ms;
+}
+
+.ThemeSwitchPathLeft:hover{
+    transform: scale(1.07);
+}
+
+.ThemeSwitchPathRight{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(35, 35, 150);
+    width: 40%;
+    height: 30%;
+    border-radius: 20px;
+    padding: 2.5px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: 120ms;
+}
+
+.ThemeSwitchPathRight:hover{
+    transform: scale(1.07);
+}
+
+.ThemeSwitch{
+    display: flex;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+.ThemeSwitch img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.HeaderRightRight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 15%;
+
+}
+
+.LightModeNightMode{
+    width: 16px;
+}
+
+.HeaderActive{
+    background-color: rgb(31, 31, 112);
+}

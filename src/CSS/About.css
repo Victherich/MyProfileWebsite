@@ -1,0 +1,44 @@
+.AboutWrap{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 85vh;
+    background-color:rgb(3, 22, 65);
+}
+
+.About{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(5, 5, 32);
+    border-radius: 200px 0px 0px 0px;
+    color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 50px;
+}
+
+.AboutLeft{
+    width: 50%;
+}
+
+.AboutRight{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutRight h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+    background-image:linear-gradient(155deg, rgb(61, 106, 239) 30%, rgb(122, 14, 190) 30%);
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+}
+
+.AboutRight p{
+    font-size: 15px;
+    font-style: italic;
+}
