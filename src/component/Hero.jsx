@@ -8,7 +8,7 @@ import '../CSS/Carousel.css'
 const Carocel = () => {
 const [carousalImageIndex,setCarousalImageIndex]=useState(0);
 const carousalmages = [CarousalImg1,CarousalImg2,CarousalImg3]
-const [circle,setCirlcle]=useState(false)
+// const [circle,setCirlcle]=useState(false)
 // const carousalImagesSlider = [Slider1,Slider2,Slider3]
 
 
@@ -40,7 +40,7 @@ useEffect(()=>{
     setCarousalImageIndex((i)=>(i+1)%carousalmages.length)
   },2000)
   return ()=>{clearInterval(intervalId)}
-},[])
+},[carousalImageIndex])
 
 
 

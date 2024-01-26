@@ -4,7 +4,7 @@ import { Context } from './Context'
 import '../CSS/About.css'
 
 const About = () => {
-    const {theme}=useContext(Context)
+    // const {theme}=useContext(Context)
    
 
   return (

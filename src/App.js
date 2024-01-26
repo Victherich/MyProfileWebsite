@@ -6,7 +6,6 @@ import About from './component/About';
 import Projects from './component/Projects';
 import Contact from './component/Contact';
 import Footer from './component/Footer';
-import Blank from './component/Blank';
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       <Hero/>
       <About/>
       <Projects/>
-      {/* <Blank className="Blank"/> */}
       <Contact/>
       <Footer/>
     </div>
