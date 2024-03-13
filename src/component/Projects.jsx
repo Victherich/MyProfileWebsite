@@ -1,19 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../CSS/Projects.css'
+import { Context } from './Context'
+import HomeHubPicture from "../Images/Homehub screenshots.png"
 
 const Projects = () => {
+  const {theme}=useContext(Context)
   return (
-    <div className='Projects' id="projects">
+    <div className={theme?'ProjectsWrapLight':'ProjectsWrap'}>
+        <div className={theme?'ProjectsLight':'Projects'} id="projects">
       <div className='Line'></div>
      <h1>Projects</h1>
-     <div className='Project'>
-        <div className='ProjectLeft'> 
+     {/* <div className={theme?'ProjectLight':'Project'}>
+        <div className={theme?'ProjectLeftLight':'ProjectLeft'}> 
           <h1>Task Management System</h1>
           <div className='TaskManagerImageWrap'>
             <img src='' alt="ScreenShot"/>
           </div>
         </div>
-        <div className='ProjectRight'> 
+        <div className={theme?'ProjectRightLight':'ProjectRight'}> 
           <p>
             This project offers 
 users a seamless experience in creating, editing, and deleting 
@@ -24,9 +28,9 @@ to enhance productivity and stay organized effortlessly.
           </p>
           <button>Click to Explore</button>
         </div>
-      </div>
-      <div className='Project'>
-      <div className='ProjectRight'> 
+      </div> */}
+      {/* <div className={theme?'ProjectLight':'Project'}>
+      <div className={theme?'ProjectRightLight':'ProjectRight'}> 
           <p>
           This React-based Banking Application enables users to effortlessly
            manage their finances. With features like balance inquiry, fund transfers,
@@ -36,24 +40,24 @@ to enhance productivity and stay organized effortlessly.
           </p>
           <button>Click to Explore</button>
         </div>
-        <div className='ProjectLeft'> 
+        <div className={theme?'ProjectLeftLight':'ProjectLeft'}> 
           <h1>Banking Web Application</h1>
           <div className='TaskManagerImageWrap'>
             <img src='' alt="ScreenShot"/>
           </div>
         </div>
         
-      </div>
-      <div className='Project'>
-        <div className='ProjectLeft'> 
-          <h1>Real Estate Website</h1>
+      </div> */}
+      <div className={theme?'ProjectLight':'Project'}>
+        <div className={theme?'ProjectLeftLight':'ProjectLeft'}> 
+          <h1>Real Estate Web Application</h1>
           <div className='TaskManagerImageWrap'>
-            <img src='' alt="ScreenShot"/>
+            <img src={HomeHubPicture} alt="ScreenShot"/>
           </div>
         </div>
-        <div className='ProjectRight'> 
+        <div className={theme?'ProjectRightLight':'ProjectRight'}> 
           <p>
-          This real estate website, crafted with precision, empowers agents and real estate companies to list 
+          This real estate web application, crafted with precision, empowers agents and real estate companies to list 
           properties for sale or rent. Prospective tenants and buyers effortlessly
            browse listed homes, connecting directly with agents and real estate companies 
            to facilitate deals. It's a streamlined platform fostering efficient property transactions 
@@ -62,8 +66,8 @@ to enhance productivity and stay organized effortlessly.
           <button>Click to Explore</button>
         </div>
       </div>
-      <div className='Project'>
-      <div className='ProjectRight'> 
+      {/* <div className={theme?'ProjectLight':'Project'}>
+      <div className={theme?'ProjectRightLight':'ProjectRight'}> 
           <p>
           This e-commerce website, meticulously designed, offers users a seamless
            shopping experience. They can explore product lists, add desired items
@@ -73,14 +77,15 @@ to enhance productivity and stay organized effortlessly.
           </p>
           <button>Click to Explore</button>
         </div>
-        <div className='ProjectLeft'> 
+        <div className={theme?'ProjectLeftLight':'ProjectLeft'}> 
           <h1>E-Commerce Website</h1>
           <div className='TaskManagerImageWrap'>
             <img src='' alt="ScreeShot"/>
           </div>
         </div>
         
-      </div>
+      </div> */}
+    </div>
     </div>
   )
 }

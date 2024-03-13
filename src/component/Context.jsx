@@ -5,7 +5,7 @@ export const Context=createContext()
 
 const ContextProvider = ({children}) => {
 
-    const [theme,setTheme]=useState(true)
+    const [theme,setTheme]=useState(false)
     const [active,setActive]=useState("Home")
 
     const scrollToAbout = (sectionId)=>{

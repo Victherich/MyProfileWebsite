@@ -10,6 +10,14 @@
     background-color: rgb(5, 5, 32);
 }
 
+.AppLight{
+    width:100%;
+    height: auto;
+    /* background-color:#f4f4f4; */
+    /* background-color: rgb(211, 206, 211); */
+    background-color: whitesmoke;
+}
+
 .Blank{
     position: absolute;
     top:500vh

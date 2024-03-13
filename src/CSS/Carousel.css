@@ -1,31 +1,69 @@
 .CarouselWrap{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
     /* background-color: rgb(7, 7, 43); */
     background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);
     border-radius: 0px 0px 200px 0px;
     padding: 15vh 0px 0px 0px;
 }
 
+.CarouselWrapLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* padding: 0px 40px; */
+    /* background-color: rgb(7, 7, 43); */
+    background: radial-gradient(1224px at 10.6% 8.8%, rgb(153, 202, 251) 0%, rgb(255,255,255) 100.2%);    
+    border-radius: 0px 0px 200px 0px;
+    padding: 15vh 0px 0px 0px;
+    border-right: 1px solid lightblue;
+    border-bottom: 1px solid #C2DFFC;
+
+}
+
 .HeroLeft{
     display: flex;
     justify-content: center;
     align-items: left;
-    width: 50%;
+    width: 45%;
     flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 10%;
     color: whitesmoke;
 }
 
+.HeroLeftLight{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 45%;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10%;
+    color:black;
+}
+
 .HeroLeft h1{
-    font-size:90px;
+    font-size:8vw;
     font-style: italic;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    /* color: rgb(182, 109, 182); */
+    /* background: linear-gradient(109.6deg, rgb(61, 106, 239) 11.2%, rgb(122, 14, 190) 70.2%); */
+    background-image:linear-gradient(135deg, rgb(61, 106, 239) 30%, rgb(122, 14, 190) 30%);
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+}
+
+.HeroLeftLight h1{
+    font-size:8vw;
+    font-style: italic;
+    /* margin-bottom: 20px; */
     /* color: rgb(182, 109, 182); */
     /* background: linear-gradient(109.6deg, rgb(61, 106, 239) 11.2%, rgb(122, 14, 190) 70.2%); */
     background-image:linear-gradient(135deg, rgb(61, 106, 239) 30%, rgb(122, 14, 190) 30%);
@@ -34,9 +72,15 @@
 }
 
 .HeroLeft p{
-    font-size: 14px;
+    font-size: 1.2vw;
     font-style: italic;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
+}
+
+.HeroLeftLight p{
+    font-size: 1.2vw;
+    font-style: italic;
+    /* margin-bottom: 4px; */
 }
 
 .Carousel{
@@ -49,8 +93,8 @@
 }
 
 .Carousel img{
-    width: 450px;
-    height: 350px;
+    width: 65%;
+    height:60%;
     border-radius: 50%;
 }
 
@@ -94,4 +138,189 @@
 .backToMainMenu:hover{
     color:red;
     text-decoration: underline;
+}
+
+@media screen and (max-width:1280px){
+    .CarouselWrap{
+        /* height: 60vh; */
+    }
+    .CarouselWrapLight{
+        /* height: 60vh; */
+    }
+    .HeroLeft h1{
+        
+    }
+    .HeroLeftLight h1{
+        
+    }
+    .HeroLeft p{
+        /* font-size: 2vw */
+    }
+    .HeroLeftLight p{
+        /* font-size: 2vw */
+    }
+    .Carousel img{
+        width: 75%;     
+    }
+}
+
+
+
+@media screen and (max-width:884px){
+    .CarouselWrap{
+        height: 60vh;
+    }
+    .CarouselWrapLight{
+        height: 60vh;
+    }
+    .HeroLeft h1{
+        
+    }
+    .HeroLeftLight h1{
+        
+    }
+    .HeroLeft p{
+        font-size: 2vw
+    }
+    .HeroLeftLight p{
+        font-size: 2vw
+    }
+    .Carousel img{
+        width: 80%;     
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .CarouselWrap{
+        height: 50vh;
+    }
+    .CarouselWrapLight{
+        height: 50vh;
+    }
+    .HeroLeft h1{
+        
+    }
+    .HeroLeftLight h1{
+        
+    }
+    .HeroLeft p{
+        font-size: 2vw
+    }
+    .HeroLeftLight p{
+        font-size: 2vw
+    }
+    .Carousel img{
+        width: 80%;     
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .CarouselWrap{
+        height: 60vh;
+    }
+    .CarouselWrapLight{
+        height: 60vh;
+    }
+    .HeroLeft h1{
+        font-size: 10vw;   
+    }
+    .HeroLeftLight h1{
+        font-size: 10vw;  
+    }
+    .HeroLeft p{
+        font-size: 2.3vw
+    }
+    .HeroLeftLight p{
+        font-size: 2.3vw
+    }
+    .Carousel img{
+        width: 80%;     
+    }
+}
+
+
+@media screen and (max-width:428px){
+    .CarouselWrap{
+        height: 50vh;
+    }
+    .CarouselWrapLight{
+        height: 50vh;
+    }
+    .HeroLeft h1{
+        font-size: 10vw;   
+    }
+    .HeroLeftLight h1{
+        font-size: 10vw;  
+    }
+    .HeroLeft p{
+        font-size: 2.3vw
+    }
+    .HeroLeftLight p{
+        font-size: 2.3vw
+    }
+    .Carousel img{
+        width: 80%;     
+    }
+
+    .CircleWrap{
+        width:30%
+    }
+    .CircleA{
+        width: 3vw;
+        height: 3vw;
+    }
+    .CircleB{
+        width: 3vw;
+        height: 3vw;
+    }
+}
+
+
+@media screen and (max-width:360px){
+    .CarouselWrap{
+        height: 50vh;
+        border-radius: 0px 0px 150px 0px;
+    }
+    .CarouselWrapLight{
+        height: 50vh;
+        border-radius: 0px 0px 150px 0px;
+    }
+    .HeroLeft{
+        /* width: 50%; */
+    }
+    .HeroLeftLight{
+
+    }
+    .Carousel{
+        /* width: 25%; */
+    }
+    .HeroLeft h1{
+        font-size: 10vw;   
+    }
+    .HeroLeftLight h1{
+        font-size: 10vw;  
+    }
+    .HeroLeft p{
+        font-size: 2.3vw
+    }
+    .HeroLeftLight p{
+        font-size: 2.3vw
+    }
+    .Carousel img{
+        width: 80%;     
+    }
+
+    .CircleWrap{
+        width:30%
+    }
+    .CircleA{
+        width: 3vw;
+        height: 3vw;
+    }
+    .CircleB{
+        width: 3vw;
+        height: 3vw;
+    }
 }

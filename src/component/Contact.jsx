@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import '../CSS/Contact.css'
 import EmailIcon from '../Images/ic_outline-email.png'
 import PhoneIcon from '../Images/Group.png'
 import LinkedInIcon from '../Images/Vector.png'
+import { Context } from './Context'
 
 const Contact = () => {
+  const {theme}=useContext(Context)
   return (
-    <div className='Contact' id="contact">
-      <div className='ContactLeft'>
+    <div className={theme?'ContactLight':'Contact'} id="contact">
+      <div className={theme?'ContactLeftLight':'ContactLeft'}>
         <h1>Let's <br/>Connect</h1>
       </div>
       <div className='ContactRight'>

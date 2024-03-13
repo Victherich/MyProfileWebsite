@@ -1,3 +1,22 @@
+.ProjectsWrapLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color:rgb(153, 202, 251);
+}
+
+.ProjectsWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color:rgb(3, 22, 65);
+}
+
+
 .Projects{
     display: flex;
     flex-direction: column;
@@ -7,9 +26,25 @@
     color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* background-color: red; */
-    gap: 30px;
-    border-radius: 200px 200px 200px 200px ;
-    margin-bottom: 10vh;
+    gap: 5vh;
+    border-radius: 0px 0px 0px 200px ;
+    /* margin-bottom: 10vh; */
+    background-color: rgb(5, 5, 32);
+}
+
+.ProjectsLight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: red; */
+    gap: 5vh;
+    border-radius: 0px 0px 0px 200px ;
+    background-color: whitesmoke;
+    /* background-color: rgb(211, 206, 211); */
 }
 
 .Line{
@@ -20,7 +55,14 @@
 }
 
 .Projects h1{
-    font-size: 45px;
+    font-size: 4vw;
+    background-image:linear-gradient(155deg, rgb(61, 106, 239) 55%, rgb(122, 14, 190) 30%);
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+}
+
+.ProjectsLight h1{
+    font-size: 4vw;
     background-image:linear-gradient(155deg, rgb(61, 106, 239) 55%, rgb(122, 14, 190) 30%);
             -webkit-background-clip: text; /* For Safari */
             color: transparent;
@@ -33,7 +75,19 @@
     height: 60vh;
     background: linear-gradient(109.6deg,  rgb(3, 22, 65) 11.2%, rgb(47, 6, 73));    
     border-radius: 40px 0px 40px 0px;
-    margin-bottom: 40px;
+    margin-bottom:10vh;
+}
+
+.ProjectLight{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    height: 60vh;
+    border-radius: 40px 0px 40px 0px;
+    margin-bottom: 10vh;
+    background: radial-gradient(1224px at 10.6% 8.8%, rgb(153, 202, 251) 0%, rgb(255,255,255) 100.2%);    
+    border: 0.5px solid lightblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px ;
 }
 
 .ProjectLeft{
@@ -43,9 +97,26 @@
     width: 50%;
     height: 100%;
     flex-direction: column;
-    gap:20px;
+    gap:5%;
     transform: scale(1);
     transition: 350ms;
+}
+
+.ProjectLeftLight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    gap:5%;
+    transform: scale(1);
+    transition: 350ms;
+}
+
+
+.ProjectLeftLight:hover{
+    transform: scale(1.1);
 }
 
 .ProjectLeft:hover{
@@ -58,14 +129,41 @@
     width: 50%;
     height: 100%;
     flex-direction: column;
-    font-size: 13px;
-    padding: 0px 60px;
-    gap:20px
+    font-size: 1.2vw;
+    padding: 0px 5%;
+    gap:5%;
+    /* font-weight: bold; */
+}
+
+.ProjectRightLight{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    font-size: 1.2vw;
+    padding: 0px 5%;
+    gap:5%;
+    color:black;
+
 }
 
 .ProjectRight button{
     width: 50%;
-    height: 40px;
+    height: 10%;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: rgb(31, 31, 112);
+    color: bisque;
+    border-radius: 10px;
+    border: none;
+    transform: scale(1);
+    transition: 120ms;
+}
+
+.ProjectRightLight button{
+    width: 50%;
+    height: 10%;
     cursor: pointer;
     font-weight: bold;
     background-color: rgb(31, 31, 112);
@@ -80,13 +178,28 @@
     transform: scale(1.06);
 }
 
+.ProjectRightLight button:hover{
+    transform: scale(1.06);
+}
+
 .ProjectRight button:active{
     transform: scale(0.9);
     background-color: rgb(13, 13, 46);
 }
+
+.ProjectRightLight button:active{
+    transform: scale(0.9);
+    background-color: rgb(13, 13, 46);
+}
+
 .ProjectLeft h1{
-    font-size: 18px;
+    font-size: 1.5vw;
     color: bisque;
+}
+
+.ProjectLeftLight h1{
+    font-size: 1.5vw;
+    color: rgb(14, 13, 13);
 }
 
 .TaskManagerImageWrap{
@@ -100,3 +213,65 @@
     
 }
 
+.TaskManagerImageWrap img{
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width:884px){
+    .Project{
+        height: 30vh;
+    }   
+    .ProjectLight{
+        height: 30vh;
+    }
+    .ProjectRight{
+        font-size: 1.5vw;
+    }
+    .ProjectRightLight{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:800px){
+    .Project{
+        height: 25vh;
+    }   
+    .ProjectLight{
+        height: 25vh;
+    }
+    .ProjectRight{
+        font-size: 1.5vw;
+    }
+    .ProjectRightLight{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and (max-width:428px){
+    .Project{
+        height: 18vh;
+    }   
+    .ProjectLight{
+        height: 18vh;
+    }
+    .ProjectRight{
+        font-size: 1.6vw;
+    }
+    .ProjectRightLight{
+        font-size: 1.6vw;
+    }
+    .ProjectRight button{
+        font-size: 1.5vw;
+    }
+    .ProjectRightLight button{
+        font-size: 1.5vw;
+    }
+    .Projects{
+        border-radius: 0px 0px 0px 120px ;
+    }
+    .ProjectsLight{
+        border-radius: 0px 0px 0px 120px ;
+    }
+}

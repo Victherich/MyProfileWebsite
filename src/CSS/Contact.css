@@ -6,26 +6,64 @@
     height: 50vh;
     /* padding: 0px 40px; */
     /* background-color: rgb(7, 7, 43); */
-    background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%);
-    border-radius: 2000px 0px 0px 0px;
+    /* background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%); */
+    background:radial-gradient(1224px at 10.6% 8.8%,rgb(3, 22, 65) 30%,rgb(14, 72, 222) 40%,rgb(3, 22, 65)50.2%) ;
+    border-radius: 0px 2000px 0px 0px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: bisque;
 }
 
+
+.ContactLight{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    /* padding: 0px 40px; */
+    /* background-color: rgb(7, 7, 43); */
+    /* background: radial-gradient(circle at 85.4% 50.8%, rgb(14, 72, 222) 0%, rgb(3, 22, 65) 74.2%); */
+    /* background:linear-gradient(to right,#5badff 40%,rgb(98, 125, 189) 50%,#5badff 60%) ; */
+    background: radial-gradient(1224px at 10.6% 8.8%,rgb(153, 202, 251) 30%, rgb(255, 255, 255) 40%, rgb(153, 202, 251) 50.2%);
+    border-radius: 0px 2000px 0px 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(17, 17, 17);
+    /* box-shadow: 0px 0px 200px 50px skyblue; */
+}
+
+
 .ContactLeft{
     display: flex;
-    padding-left: 20%;
+    padding-left: 10%;
     justify-content:center;
     align-items: center;
     width: 50%;
     height: 100%;
-    font-size: 35px;
+    font-size: 3vw;
+}
+
+
+.ContactLeftLight{
+    display: flex;
+    padding-left: 10%;
+    justify-content:center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-size: 3vw;
 }
 
 .ContactLeft h1{
     background-image:linear-gradient(135deg, rgb(61, 106, 239) 47%, rgb(122, 14, 190) 30%);
             -webkit-background-clip: text; /* For Safari */
             color: transparent;
+}
+
+.ContactLeftLight h1{
+    background-image:linear-gradient(135deg, rgb(31, 52, 116) 47%, rgb(87, 11, 134) 30%);
+            -webkit-background-clip: text; /* For Safari */
+            color: transparent;
+            
 }
 
 
@@ -36,12 +74,12 @@
     gap:20px;
     width: 50%;
     height: 100%;
-    font-size: 14px;
+    font-size: 1.2vw;
     padding-left: 10%;
 }
 
 .ContactRight img{
-    width:30px;
+    width:5%;
 
 }
 
@@ -49,6 +87,54 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap:10px;
+    gap:3%;
     font-weight: bold;
+}
+
+@media screen and (max-width:884px) {
+    .ContactLeft{
+        font-size: 4vw;
+    }
+    .ContactLeftLight{
+        font-size: 4vw;
+    }
+    .ContactRight{
+        font-size: 1.8vw;
+    }   
+    .ContactRightLight{
+        font-size: 1.8vw;
+    } 
+    .Contact{
+        height:40vw;
+    }
+    .ContactLight{
+        height:40vw;
+    }
+}
+
+@media screen and (max-width:428px) {
+    .ContactLeft{
+        font-size: 4vw;
+        width: 40%;
+    }
+    .ContactLeftLight{
+        font-size: 4vw;
+        width: 40%;
+    }
+    .ContactRight{
+        font-size: 1.8vw;
+    }   
+    .ContactRightLight{
+        font-size: 1.8vw;
+    } 
+    .Contact{
+        height:40vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .ContactLight{
+        height:40vw;
+        justify-content: center;
+        align-items: center;
+    }
 }

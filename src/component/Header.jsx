@@ -31,15 +31,24 @@ const Header = () => {
   setActive("Contact")
   scrollToContact('contact')
  }
+
+const handleActiveTheme=()=>{
+  if(!theme){
+    return 'HeaderActive'
+  }else{
+    return 'HeaderActiveLight'
+  }
+}
+
   return (
-    <div className='HeaderWrap'>
+    <div className={theme?'HeaderWrapLight':'HeaderWrap'}>
       <div className='Header'>
         <div className='HeaderImageWrap'><img src={Logo} alt="Logo"/></div>
         <div className='HeaderRight'>
-          <p onClick={handleHomeFuction} className={active==="Home"?'HeaderActive':""}>Home</p>
-          <p onClick={handleAboutFuction} className={active==="About"?'HeaderActive':""}>About</p>
-          <p onClick={handleProjectsFuction} className={active==="Projects"?'HeaderActive':""}>Projects</p>
-          <p onClick={handleContactFuction} className={active==="Contact"?'HeaderActive':""}>Contact</p>
+          <p onClick={handleHomeFuction} className={active==="Home"? handleActiveTheme():""}>Home</p>
+          <p onClick={handleAboutFuction} className={active==="About"?handleActiveTheme():""}>About</p>
+          <p onClick={handleProjectsFuction} className={active==="Projects"?handleActiveTheme():""}>Projects</p>
+          <p onClick={handleContactFuction} className={active==="Contact"?handleActiveTheme():""}>Contact</p>
           <div className='HeaderRightRight'>
             <img src={LightMode} alt="LightModeImg" className='LightModeNightMode'/>
           <div onClick={()=>setTheme(!theme)}className={theme?'ThemeSwitchPathLeft':'ThemeSwitchPathRight'}>

@@ -1,13 +1,19 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import CarousalImg1 from '../Images/Most-Beautiful-Cities-in-Canada-to-Visit-With-Your-Family-and-Friends.jpg'
 import CarousalImg2 from '../Images/istockphoto-1399714603-170667a.webp'
 import CarousalImg3 from '../Images/istockphoto-467829216-612x612.jpg'
+import HeroImg1 from '../Images/profile pic 1.jpeg'
+import HeroImg2 from '../Images/profile pic 2.jpeg'
+import HeroImg3 from '../Images/profile pic 3.jpeg'
 import '../CSS/Carousel.css'
+import { Context } from './Context'
 // import { Link } from 'react-router-dom'
 
 const Carocel = () => {
+  const {theme}=useContext(Context)
 const [carousalImageIndex,setCarousalImageIndex]=useState(0);
-const carousalmages = [CarousalImg1,CarousalImg2,CarousalImg3]
+// const carousalmages = [CarousalImg1,CarousalImg2,CarousalImg3]
+const carousalmages = [HeroImg1,HeroImg2,HeroImg3]
 // const [circle,setCirlcle]=useState(false)
 // const carousalImagesSlider = [Slider1,Slider2,Slider3]
 
@@ -38,15 +44,15 @@ const carousalmages = [CarousalImg1,CarousalImg2,CarousalImg3]
 useEffect(()=>{
   const intervalId = setInterval(()=>{
     setCarousalImageIndex((i)=>(i+1)%carousalmages.length)
-  },2000)
+  },1000)
   return ()=>{clearInterval(intervalId)}
 },[carousalImageIndex])
 
 
 
   return (
-    <div className='CarouselWrap' id="home">
-      <div className='HeroLeft'>
+    <div className={theme?"CarouselWrapLight":'CarouselWrap'} id="home">
+      <div className={theme?'HeroLeftLight':'HeroLeft'}>
       {/* <h1>EbubeChukwu</h1> */}
         <h1>Victor Ndu</h1>
         <p>| Software Developer | Front-end Development |</p>
