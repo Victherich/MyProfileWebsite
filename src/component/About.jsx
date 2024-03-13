@@ -4,6 +4,7 @@ import { Context } from './Context'
 import '../CSS/About.css'
 import AboutImg from '../Images/AboutImgB.png'
 
+
 const About = () => {
     const {theme}=useContext(Context)
    
@@ -22,6 +23,7 @@ const About = () => {
              my commitment to excellence is unwavering. Beyond the code, my personal character adds a distinctive 
              touch to each project. Join me in transforming ideas into interactive realities, 
              where creativity seamlessly merges with functionality.</p>
+             {/* <Link>Click to Explore</Link> */}
         </div>
       </div>
     </div>
