@@ -63,7 +63,7 @@ to enhance productivity and stay organized effortlessly.
            to facilitate deals. It's a streamlined platform fostering efficient property transactions 
           and meaningful connections in the real estate market.
           </p>
-          <button>Click to Explore</button>
+          <button onClick={()=>window.open("https://homehub-ten.vercel.app/","_blank")}>Click to Explore</button>
         </div>
       </div>
       {/* <div className={theme?'ProjectLight':'Project'}>
